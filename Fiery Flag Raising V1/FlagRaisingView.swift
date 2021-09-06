@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FlagRaisingView: View {
     
-    @State var offset: CGFloat = 20
+    @AppStorage("flagOffset") var offset: Double = 20
     var flagEmoji: String
     
     var body: some View {
@@ -19,7 +19,7 @@ struct FlagRaisingView: View {
                     .frame(width: 10)
                 Text(flagEmoji)
                     .font(.system(size: 100))
-                    .offset(y: offset)
+                    .offset(y: CGFloat(offset))
             }
             Button("Raise Flag") {
                 offset -= 20
