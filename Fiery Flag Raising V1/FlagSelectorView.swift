@@ -17,6 +17,8 @@ struct FlagSelectorView: View {
         return try! decoder.decode([Flag].self, from: data)
     }
     
+    @Binding var selectedFlag: Flag
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -30,6 +32,13 @@ struct FlagSelectorView: View {
                                 .font(.caption)
                                 .multilineTextAlignment(.center)
                         }.padding()
+                        .background(flag == selectedFlag ? Color.blue : Color.clear)
+                        .foregroundColor(flag == selectedFlag ? .white : .black)
+                        .cornerRadius(10)
+                        .onTapGesture {
+                            selectedFlag = flag
+                        }
+
                     }
                     
                 }
@@ -41,6 +50,6 @@ struct FlagSelectorView: View {
 
 struct FlagSelectorView_Previews: PreviewProvider {
     static var previews: some View {
-        FlagSelectorView()
+        FlagSelectorView(selectedFlag: .constant(Flag(emoji: "🇸🇬", description: "Singapore")))
     }
 }

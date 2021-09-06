@@ -10,13 +10,14 @@ import SwiftUI
 struct FlagRaisingView: View {
     
     @State var offset: CGFloat = 20
+    var flagEmoji: String
     
     var body: some View {
         VStack {
             HStack(alignment: .bottom, spacing: -10) {
                 Rectangle()
                     .frame(width: 10)
-                Text("🇸🇬")
+                Text(flagEmoji)
                     .font(.system(size: 100))
                     .offset(y: offset)
             }
@@ -35,6 +36,6 @@ struct FlagRaisingView: View {
 
 struct FlagRaisingView_Previews: PreviewProvider {
     static var previews: some View {
-        FlagRaisingView()
+        FlagRaisingView(flagEmoji: "🇸🇬")
     }
 }

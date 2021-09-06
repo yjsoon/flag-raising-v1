@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var flag = Flag(emoji: "🇸🇬", description: "Singapore")
+    
     var body: some View {
         TabView {
-            FlagRaisingView()
+            FlagRaisingView(flagEmoji: flag.emoji)
                 .tabItem {
                     Label("Flag raising", image: "finish")
                 }
-            FlagSelectorView()
+            FlagSelectorView(selectedFlag: $flag)
                 .tabItem {
                     Label("Choose flag", systemImage: "square.grid.2x2.fill")
                 }
