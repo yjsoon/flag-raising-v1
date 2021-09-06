@@ -10,11 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("Flag raising goes here")
+            FlagRaisingView()
                 .tabItem {
                     Label("Flag raising", image: "finish")
                 }
-            Text("Flag chooser goes here")
+            FlagSelectorView()
                 .tabItem {
                     Label("Choose flag", systemImage: "square.grid.2x2.fill")
                 }

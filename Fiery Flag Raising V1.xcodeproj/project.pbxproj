@@ -12,6 +12,9 @@
 		AF9F2AB326E5B05E00335B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9F2AB226E5B05E00335B35 /* Assets.xcassets */; };
 		AF9F2AB626E5B05E00335B35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9F2AB526E5B05E00335B35 /* Preview Assets.xcassets */; };
 		AF9F2ABE26E5B2B200335B35 /* FlagRaisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9F2ABD26E5B2B200335B35 /* FlagRaisingView.swift */; };
+		AF9F2AC026E5B7DD00335B35 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9F2ABF26E5B7DD00335B35 /* Flag.swift */; };
+		AF9F2AC226E5B91B00335B35 /* FlagSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9F2AC126E5B91B00335B35 /* FlagSelectorView.swift */; };
+		AF9F2AC426E5B95800335B35 /* FlagData.json in Resources */ = {isa = PBXBuildFile; fileRef = AF9F2AC326E5B95800335B35 /* FlagData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		AF9F2AB526E5B05E00335B35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF9F2AB726E5B05E00335B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF9F2ABD26E5B2B200335B35 /* FlagRaisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagRaisingView.swift; sourceTree = "<group>"; };
+		AF9F2ABF26E5B7DD00335B35 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		AF9F2AC126E5B91B00335B35 /* FlagSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagSelectorView.swift; sourceTree = "<group>"; };
+		AF9F2AC326E5B95800335B35 /* FlagData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FlagData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 		AF9F2AAD26E5B05C00335B35 /* Fiery Flag Raising V1 */ = {
 			isa = PBXGroup;
 			children = (
+				AF9F2AC326E5B95800335B35 /* FlagData.json */,
 				AF9F2AAE26E5B05C00335B35 /* Fiery_Flag_Raising_V1App.swift */,
 				AF9F2AB026E5B05C00335B35 /* ContentView.swift */,
+				AF9F2ABF26E5B7DD00335B35 /* Flag.swift */,
+				AF9F2AC126E5B91B00335B35 /* FlagSelectorView.swift */,
 				AF9F2ABD26E5B2B200335B35 /* FlagRaisingView.swift */,
 				AF9F2AB226E5B05E00335B35 /* Assets.xcassets */,
 				AF9F2AB726E5B05E00335B35 /* Info.plist */,
@@ -130,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF9F2AB626E5B05E00335B35 /* Preview Assets.xcassets in Resources */,
+				AF9F2AC426E5B95800335B35 /* FlagData.json in Resources */,
 				AF9F2AB326E5B05E00335B35 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF9F2AB126E5B05C00335B35 /* ContentView.swift in Sources */,
+				AF9F2AC226E5B91B00335B35 /* FlagSelectorView.swift in Sources */,
 				AF9F2AAF26E5B05C00335B35 /* Fiery_Flag_Raising_V1App.swift in Sources */,
 				AF9F2ABE26E5B2B200335B35 /* FlagRaisingView.swift in Sources */,
+				AF9F2AC026E5B7DD00335B35 /* Flag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
