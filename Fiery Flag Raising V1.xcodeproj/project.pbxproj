@@ -11,6 +11,7 @@
 		AF9F2AB126E5B05C00335B35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9F2AB026E5B05C00335B35 /* ContentView.swift */; };
 		AF9F2AB326E5B05E00335B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9F2AB226E5B05E00335B35 /* Assets.xcassets */; };
 		AF9F2AB626E5B05E00335B35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9F2AB526E5B05E00335B35 /* Preview Assets.xcassets */; };
+		AF9F2ABE26E5B2B200335B35 /* FlagRaisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9F2ABD26E5B2B200335B35 /* FlagRaisingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		AF9F2AB226E5B05E00335B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF9F2AB526E5B05E00335B35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF9F2AB726E5B05E00335B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9F2ABD26E5B2B200335B35 /* FlagRaisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagRaisingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				AF9F2AAE26E5B05C00335B35 /* Fiery_Flag_Raising_V1App.swift */,
 				AF9F2AB026E5B05C00335B35 /* ContentView.swift */,
+				AF9F2ABD26E5B2B200335B35 /* FlagRaisingView.swift */,
 				AF9F2AB226E5B05E00335B35 /* Assets.xcassets */,
 				AF9F2AB726E5B05E00335B35 /* Info.plist */,
 				AF9F2AB426E5B05E00335B35 /* Preview Content */,
@@ -140,6 +143,7 @@
 			files = (
 				AF9F2AB126E5B05C00335B35 /* ContentView.swift in Sources */,
 				AF9F2AAF26E5B05C00335B35 /* Fiery_Flag_Raising_V1App.swift in Sources */,
+				AF9F2ABE26E5B2B200335B35 /* FlagRaisingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
