@@ -21,12 +21,17 @@ struct FlagSelectorView: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
-                    Text("hello")
-                    Text("hello")
-                    Text("hello")
-                    Text("hello")
-                    Text("hello")
-                    Text("hello")
+                    
+                    ForEach(flags) { flag in
+                        VStack {
+                            Text(flag.emoji)
+                                .font(.system(size: 50))
+                            Text(flag.description)
+                                .font(.caption)
+                                .multilineTextAlignment(.center)
+                        }.padding()
+                    }
+                    
                 }
             }
             .navigationTitle("Choose yo' flag")
